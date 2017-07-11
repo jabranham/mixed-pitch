@@ -62,6 +62,7 @@
     mu4e-contact-face
     mu4e-compose-separator-face
     mu4e-compose-header-face
+    org-block
     org-block-begin-line
     org-block-end-line
     org-code
