@@ -118,8 +118,6 @@ inherited from `variable-pitch' and `default'."
       (progn (face-remap-remove-relative mixed-pitch-variable-cookie)
              (dolist (cookie mixed-pitch-fixed-cookie)
                (face-remap-remove-relative cookie))
-             (setq mixed-pitch-variable-cookie nil)
-             (setq mixed-pitch-fixed-cookie nil)
              ;; Restore the cursor if we changed it:
              (when mixed-pitch-change-cursor
                (setq cursor-type mixed-pitch-cursor-type))))))
