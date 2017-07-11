@@ -73,7 +73,7 @@
   "This is a list holding names of faces that will not be variable pitch when function `mixed-pitch-mode' is enabled."
   :group 'mixed-pitch)
 
-(defcustom mixed-pitch-change-cursor 'bar
+(defcustom mixed-pitch-variable-pitch-cursor 'bar
   "If non-nil, function `mixed-pitch-mode' changes the cursor.
 When disabled, switch back to what it was before.
 
@@ -102,7 +102,7 @@ inherited from `variable-pitch' and `default'."
     (if mixed-pitch-mode
         (progn
           ;; remember cursor type
-          (when mixed-pitch-change-cursor
+          (when mixed-pitch-variable-pitch-cursor
             (setq mixed-pitch-cursor-type cursor-type))
           ;; remap default face to variable pitch
           (setq mixed-pitch-variable-cookie
@@ -117,13 +117,13 @@ inherited from `variable-pitch' and `default'."
                          (face-remap-add-relative
                           face :family fix-pitch :height fix-height)))
           ;; Change the cursor if the user requested:
-          (when mixed-pitch-change-cursor (setq cursor-type mixed-pitch-change-cursor)))
+          (when mixed-pitch-variable-pitch-cursor (setq cursor-type mixed-pitch-variable-pitch-cursor)))
       ;; Turn mixed-pitch-mode off:
       (progn (face-remap-remove-relative mixed-pitch-variable-cookie)
              (dolist (cookie mixed-pitch-fixed-cookie)
                (face-remap-remove-relative cookie))
              ;; Restore the cursor if we changed it:
-             (when mixed-pitch-change-cursor
+             (when mixed-pitch-variable-pitch-cursor
                (setq cursor-type mixed-pitch-cursor-type))))))
 
 (provide 'mixed-pitch)
