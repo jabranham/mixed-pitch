@@ -108,9 +108,7 @@ inherited from `variable-pitch' and `default'."
           (setq mixed-pitch-variable-cookie
                 (face-remap-add-relative
                  'default :family var-pitch :height var-height))
-          ;; Need to empty mixed-pitch-fixed-pitch-faces in case the user
-          ;; changes faces:
-          (setq mixed-pitch-fixed-pitch-faces nil)
+          (setq mixed-pitch-fixed-cookie nil)
           ;; keep fonts in `mixed-pitch-fixed-pitch-faces' as fixed-pitch.
           (dolist (face mixed-pitch-fixed-pitch-faces)
             (add-to-list 'mixed-pitch-fixed-cookie
