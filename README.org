@@ -2,10 +2,11 @@
 #+AUTHOR: J. Alexander Branham
 #+LANGUAGE: en
 
-Mixed pitch mode enables mixing fixed-pitch (also known as fixed-width or monospace) and variable-pitch (AKA "proportional") fonts.
+Mixed pitch mode enables mixing fixed-pitch (also known as fixed-width or
+monospace) and variable-pitch (AKA "proportional") fonts.
 * Installation
-Clone the git repo and add it to your load-path.
-This section will be updated with mixed-pitch.el gets added to MELPA.
+Clone the git repo and add it to your load-path. This section will be updated
+with mixed-pitch.el gets added to MELPA.
 * Configuration
 If you use =use-package=:
 #+BEGIN_SRC emacs-lisp
@@ -13,5 +14,8 @@ If you use =use-package=:
     :load-path "/path/to/mixed-pitch"
     :config
     ;; If you want it in all text modes:
-    (add-hook 'text-mode-hook #'mixed-pitch-mode))
+    (add-hook 'text-mode-hook #'mixed-pitch-mode)
+    ;; Depending on your specific setup, you may want to adjust the height of
+    ;; variable pitch fonts:
+    (set-face-attribute 'variable-pitch :height 160))
 #+END_SRC
