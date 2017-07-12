@@ -2,8 +2,13 @@
 #+AUTHOR: J. Alexander Branham
 #+LANGUAGE: en
 
-Mixed pitch mode enables mixing fixed-pitch (also known as fixed-width or
-monospace) and variable-pitch (AKA "proportional") fonts.
+Mixed pitch is a minor mode that enables mixing fixed-pitch (also known as
+fixed-width or monospace) and variable-pitch (AKA "proportional") fonts. It
+tries to be smart about which fonts get which face. Fonts that look like code,
+org-tables, and such remain fixed-pitch and everything else becomes
+variable-pitch. The variable ~mixed-pitch-fixed-pitch-faces~ is a list of faces
+that will remain fixed-pitch in mixed-pitch-mode.
+
 * Installation
 Clone the git repo and add it to your load-path. This section will be updated
 with mixed-pitch.el gets added to MELPA.
