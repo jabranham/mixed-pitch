@@ -8,11 +8,39 @@
 ;; Version: 0.1
 ;; Package-Requires: ((emacs "25.2"))
 
+;; This file is not part of GNU Emacs.
+
+;;; License:
+;;
+;; This program is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+;;
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+;;
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see
+;; <http://www.gnu.org/licenses/>
+
+
 ;;; Commentary:
 ;; `mixed-pitch-mode' is a minor mode that enables mixing variable-pitch and
 ;; fixed-pitch fonts in the same buffer. The list
 ;; `mixed-pitch-fixed-pitch-faces' defines the faces that are kept fixed-pitch,
 ;; everything else becomes variable-pitch.
+
+;; Original idea came from https://ogbe.net/blog/toggle-serif.html
+;; Shared with permission.
+
+;; Usage:
+;; (require 'mixed-pitch)
+;; (mixed-pitch-mode)
+;; Or, to apply mixed-pitch-mode in all text modes:
+;; (add-hook 'text-mode-hook #'mixed-pitch-mode)
 
 ;;; Code:
 
@@ -126,5 +154,4 @@ inherited from `variable-pitch' and `default'."
                (setq cursor-type mixed-pitch-cursor-type))))))
 
 (provide 'mixed-pitch)
-
 ;;; mixed-pitch.el ends here
