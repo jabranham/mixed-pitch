@@ -12,13 +12,12 @@ that will remain fixed-pitch in mixed-pitch-mode:
 [[file:screenshots/screenshot_20170712_202445.png]]
 
 * Installation
-Clone the git repo and add it to your load-path. This section will be updated
-with mixed-pitch.el gets added to MELPA.
+~mixed-pitch~ is on MELPA. Set up MELPA and then you can simply do ~M-x package-install mixed-pitch~.
 * Configuration
 If you use =use-package=:
 #+BEGIN_SRC emacs-lisp
   (use-package mixed-pitch
-    :load-path "/path/to/mixed-pitch"
+    :ensure t
     :config
     ;; If you want it in all text modes:
     (add-hook 'text-mode-hook #'mixed-pitch-mode)
