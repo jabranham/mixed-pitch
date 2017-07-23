@@ -1,4 +1,4 @@
-;;; mixed-pitch.el --- Mix fixed and variable pitch -*- lexical-binding: t; -*-
+;;; mixed-pitch.el --- Use a variable pitch, keeping fixed pitch where it's sensible -*- lexical-binding: t; -*-
 
 ;;; Copyright (C) 2017 by J. Alexander Branham
 
