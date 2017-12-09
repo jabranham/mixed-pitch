@@ -25,3 +25,10 @@ If you use =use-package=:
     ;; variable pitch fonts:
     (set-face-attribute 'variable-pitch :height 160))
 #+END_SRC
+* Known issues
+** org SRC blocks shown in variable pitch
+~mixed-pitch.el~ relies on a face introduced in org version 9.0 to make SRC blocks
+fixed-pitch. Without this, some things in source blocks may appear
+variable-pitch. The solution is to update your version of org. As a workaround,
+consider adding org-block to ~~mixed-pitch-fixed-pitch-faces~. See also the
+discussion in issue #2.
