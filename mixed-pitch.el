@@ -1,6 +1,6 @@
 ;;; mixed-pitch.el --- Use a variable pitch, keeping fixed pitch where it's sensible -*- lexical-binding: t; -*-
 
-;;; Copyright (C) 2017 by J. Alexander Branham
+;;; Copyright (C) 2017, 2018 by J. Alexander Branham
 
 ;; Author: J. Alexander Branham <branham@utexas.edu>
 ;; Maintainer: J. Alexander Branham <branham@utexas.edu>
