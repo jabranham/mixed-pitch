@@ -108,7 +108,9 @@
   "If non-nil, function `mixed-pitch-mode' changes the cursor.
 When disabled, switch back to what it was before.
 
-See `cursor-type' for a list of acceptable types.")
+See `cursor-type' for a list of acceptable types."
+  :type 'symbol
+  :group 'mixed-pitch)
 
 (defvar-local mixed-pitch-fixed-cookie nil)
 (defvar-local mixed-pitch-variable-cookie nil)
