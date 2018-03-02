@@ -17,13 +17,9 @@ that will remain fixed-pitch in mixed-pitch-mode:
 If you use =use-package=:
 #+BEGIN_SRC emacs-lisp
   (use-package mixed-pitch
-    :ensure t
-    :config
+    :hook
     ;; If you want it in all text modes:
-    (add-hook 'text-mode-hook #'mixed-pitch-mode)
-    ;; Depending on your specific setup, you may want to adjust the height of
-    ;; variable pitch fonts:
-    (set-face-attribute 'variable-pitch :height 160))
+    (text-mode . mixed-pitch-mode))
 #+END_SRC
 * Known issues
 ** org SRC blocks shown in variable pitch
