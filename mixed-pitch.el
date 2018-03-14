@@ -55,7 +55,14 @@
   :group 'mixed-pitch)
 
 (defcustom mixed-pitch-fixed-pitch-faces
-  '(font-latex-math-face
+  '(diff-added
+    diff-context
+    diff-file-header
+    diff-function
+    diff-header
+    diff-hunk-header
+    diff-removed
+    font-latex-math-face
     font-latex-sedate-face
     font-latex-warning-face
     font-latex-sectioning-5-face
