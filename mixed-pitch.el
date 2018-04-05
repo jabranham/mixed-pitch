@@ -79,7 +79,6 @@
     font-lock-string-face
     font-lock-type-face
     font-lock-variable-name-face
-    font-lock-warning-faceorg-block
     markdown-code-face
     markdown-gfm-checkbox-face
     markdown-inline-code-face
