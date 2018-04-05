@@ -103,7 +103,7 @@
     org-block-end-line
     org-code
     org-latex-and-related
-    org-list-checkbox
+    org-checkbox
     org-meta-line
     org-table
     org-verbatim)
