@@ -108,7 +108,7 @@
     org-table
     org-verbatim)
   "This is a list holding names of faces that will not be variable pitch when function `mixed-pitch-mode' is enabled."
-  :type '(repeat symbol)
+  :type '(repeat face)
   :group 'mixed-pitch)
 
 (defcustom mixed-pitch-variable-pitch-cursor 'bar
