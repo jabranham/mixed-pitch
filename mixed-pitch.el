@@ -101,6 +101,7 @@
     org-block
     org-block-begin-line
     org-block-end-line
+    org-document-info-keyword
     org-code
     org-latex-and-related
     org-checkbox
